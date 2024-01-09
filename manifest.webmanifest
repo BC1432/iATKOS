@@ -2,7 +2,7 @@
     "theme_color": "#000000",
     "background_color": "#FFFFFF",
     "display": "fullscreen",
-    "scope": "/?app",
+    "scope": "/",
     "start_url": "/?app",
     "name": "iATKOS Inside",
     "short_name": "iATKOS",
