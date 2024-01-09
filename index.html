@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iATKOS Blog</title>
     <link rel="manifest" href="manifest.webmanifest">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+            .then(function(registration) {
+                console.log('Service Worker registrado con éxito con alcance: ', registration.scope);
+            })
+            .catch(function(error) {
+                console.log('Registro de Service Worker fallido:', error);
+            });
+        }
+    </script>
+
+      
 </head>
 <body>
     <h1>Welcome to the iATKOS Blog</h1>
